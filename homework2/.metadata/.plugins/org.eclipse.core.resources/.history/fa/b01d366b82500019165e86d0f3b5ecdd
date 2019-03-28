@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Homework2 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String course[] = {"java", "C++", "HTML5", "컴퓨터구조", "안드로이드"};
+		int score[] = {95,88,76,62,55};
+		while(true) {
+			String str = scanner.nextLine();
+			
+			for(int i = 0;i<course.length;i++) {
+				if(str.equals(course[i])) {
+					System.out.println(score[i]);
+					break;
+				}
+			}
+			if(str.equals("그만")) {
+				System.out.println("그만");
+			}
+			else {
+				System.out.println("없는 과목입니다.");
+			}
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int a = ;
+		int b=1;
+		while(b<=100) {
+			a = a+b;
+			b++;
+		}
+		System.out.println(a);
+	}
+
+}

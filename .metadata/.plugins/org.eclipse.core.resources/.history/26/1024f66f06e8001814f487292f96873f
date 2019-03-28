@@ -1,0 +1,20 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("안녕하세요오오");
+		Scanner number = new Scanner(System.in);
+		
+		int num1 = number.nextInt();
+		int num2 = number.nextInt();
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static int function(int a, int b, int c) {
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

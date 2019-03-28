@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\dlaxo\eclipse-workspace\0313 practice\.metadata\.plugins\org.eclipse.jdt.core
+870951873.index

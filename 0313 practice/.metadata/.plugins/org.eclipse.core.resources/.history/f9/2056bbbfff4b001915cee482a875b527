@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class _0322 {
+
+	public static void main(String[] args) {
+		int Arrays[] = {};
+		Scanner money = new Scanner(System.in);
+		
+	}
+}
