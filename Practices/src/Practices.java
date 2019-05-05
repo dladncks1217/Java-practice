@@ -1,25 +1,27 @@
 import java.util.Scanner;
-class Person{
-	String name;
-	String id;
-	
-	public Person(String name) {
-		this.name = name;
-	}
-}
-class Student extends Person{
-	String grade;
-	String department;
-	
-	public Student(String name) {
-		super(name);
-	}
-}
+
 public class Practices {
 	public static void main(String[] args) {
-			Person p;
-			Student s = new Student("ÀÓ¿ìÂù");
-			p = s;
-			System.out.println(p.name);
+		Scanner scan = new Scanner(System.in);
+		double num1 = scan.nextInt();
+		double num2 = scan.nextInt();
+		int sum = 0,count = 0;
+		int minnum = 0;
+		for(int i = 1;i*i<=10000;i++) {
+			if(i*i>=num1&&i*i<=num2) {
+				sum = sum+i*i;
+				count++;
+			}
+			if(count==1) {
+				minnum = i*i;
+			}
+			
+		}
+		if(sum==0) {
+			System.out.println(-1);
+			return;
+		}
+		System.out.println(sum);
+		System.out.println(minnum);
 	}	
 }
