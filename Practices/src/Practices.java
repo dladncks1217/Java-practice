@@ -1,31 +1,31 @@
 import java.util.Scanner;
-interface Shape {
-	   final double PI = 3.14; // 상수
-	   void draw(); // 도형 그리는 추상 메소드
-	   double getArea(); // 도형의 면적을 리턴하는 추상 메소드
-	   default public void redraw() { // 디폴트 메소드
-	      System.out.print("--- 다시 그립니다.");
-	      draw();
-	   }
-	}
-class Circle implements Shape {
-	   private int radius;
-	   public Circle(int radius) {
-	      this.radius = radius;
-	   }
-	   public void draw() {
-	      System.out.println("반지름이 "+radius+"인 원입니다.");
-	   }
-	   public double getArea() {
-	      return PI*radius*radius;
-	   }
-	}
-
 public class Practices {
 	public static void main(String[] args) {
-		 Shape donut = new Circle(10); // 반지름이 10인 원 객체
-		   donut.redraw();
-		   System.out.println("면적은 "+ donut.getArea());
+		String [][]a = new String [1000][1000];
+		String []b = new String[10000000];
+		int count = 0;
+		int num1 = 1, num2 = 1;
+		int answer;
+		
+		for(int i = 0;i<1000;i++) {
+			num2 = 1;
+			for(int j = 0;j<1000;j++) {
+				a[i][j] = num1+"/"+num2;
+				num2++;
+			}
+			num1++;
+		}
+		
+		for(int x = 0;x<1000;x++) {
+			for(int y = 0; y<1000;y++ ) {
+				b[count] = a[x][y];
+				count++;
+			}
+		}
+		Scanner scan = new Scanner(System.in);
+		answer = scan.nextInt();
+		System.out.println(b[answer+1]);
+	
 		
 	}
 }
