@@ -23,7 +23,6 @@ class ArrayList{
 			case 'D':numscores[i] = 1.0;break;
 			case 'F':numscores[i] = 0.0;break;
 			}
-			System.out.println(numscores[i]);
 		}
 	}
 	public double printAverage() {
@@ -34,7 +33,7 @@ class ArrayList{
 		return average;
 	}
 }
-public class Practices {
+public class Homework_0522 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		char []scores = new char[6];
@@ -42,11 +41,7 @@ public class Practices {
 		for(int i = 0;i<6;i++) {
 			scores[i] = scan.next().charAt(0);
 		}
-		ArrayList arr = new ArrayList(scores[0],scores[1],scores[2],scores[3],scores[4],scores[5]);
-		for(int i = 0;i<=5;i++) {
-			System.out.println(arr.scores[i]);
-		}
-		
+		ArrayList arr = new ArrayList(scores[0],scores[1],scores[2],scores[3],scores[4],scores[5]);	
 		arr.scorecheck();
 		System.out.println(arr.printAverage());
 	}
