@@ -8,7 +8,7 @@ public class Homework_0529 {
 			FileInputStream fis = new FileInputStream("C:\\\\Users\\\\dlaxo\\\\eclipse-workspace\\\\Homework_0529\\\\test.txt");
 			InputStreamReader isr = new InputStreamReader(fis, "MS949");
 			int c;
-			System.out.println("Encoding set:" +isr.getEncoding());//인코딩방식(영어가 아닐경우를 말한다) 밑 encoding set 은 인코딩방식을 말한것이다.
+			System.out.println("Encoding set:" +isr.getEncoding());
 			while ((c = isr.read())!=-1) {
 				System.out.print((char)c);
 			}
