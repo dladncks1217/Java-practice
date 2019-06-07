@@ -13,7 +13,6 @@ INDEX VERSION 1.131+C:\Users\dlaxo\eclipse-workspace\.metadata\.plugins\org.ecli
 1110334383.index
 2994552673.index
 3964918290.index
-2924467989.index
 1713295793.index
 146530134.index
 3688233713.index
