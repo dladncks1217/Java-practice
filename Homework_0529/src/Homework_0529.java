@@ -19,4 +19,5 @@ public class Homework_0529 {
 			System.out.println("IO Error");
 		}
 	}
+	
 }
