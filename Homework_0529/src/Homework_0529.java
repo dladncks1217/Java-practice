@@ -14,7 +14,7 @@ public class Homework_0529 {
 			}
 			isr.close();
 			fis.close();
-			
+			 
 		}catch(IOException e) {
 			System.out.println("IO Error");
 		}
