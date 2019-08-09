@@ -1,29 +1,29 @@
 import java.util.Scanner;
 
-class Circulate{
-	int a;
-	int b;
-	
-	public Circulate(int a,int b) {
-		this.a = a;
-		this.b = b;
-	}
-	public void boo() {
-		System.out.println((a+b)*(a-b));
-		
-		}
-}
-
-
 public class Practices {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
 		int b = scan.nextInt();
-		if(a>=1000||b>=1000) {
-			return;
+		if(a>=100) {
+			while(true) {
+				if(a%100==0) {
+					break;
+				}
+				a=a-1;
+			}
+			while(true) {
+				if(a%b==0) {
+					break;
+				}
+				a=a+1;
+			}
+			if(a%100<10) {
+				System.out.println("0"+a%100);
+			}else {
+				System.out.println(a%100);
+			}
 		}
-		Circulate c = new Circulate(a,b);
-		c.boo();
+
 	}
 }
