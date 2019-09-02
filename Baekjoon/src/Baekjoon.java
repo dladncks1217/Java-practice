@@ -1,15 +1,15 @@
 import java.util.Scanner;
-import java.util.Arrays;
 public class Baekjoon {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int []arr = new int[3];
-		for(int i = 0;i<3;i++) {
-			arr[i] = scan.nextInt();
+		int num = scan.nextInt();
+		long []array = new long[num+1];
+		array[0] = 0;
+		array[1] = 1;
+		for(int i = 2;i<array.length;i++) {
+			array[i] = array[i-1]+array[i-2];
 		}
-		Arrays.sort(arr);
-		System.out.println(arr[1]);
-		
+		System.out.println(array[num]);
 	}
 }
