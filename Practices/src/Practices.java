@@ -1,29 +1,21 @@
-import java.util.Scanner;
-
+class Person{
+	String name;
+	Person(String name){
+		this.name = name;
+	}
+}
+class Student extends Person{
+	String check;
+	Student(String name){
+		super(name);
+	}
+}
 public class Practices {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int a = scan.nextInt();
-		int b = scan.nextInt();
-		if(a>=100) {
-			while(true) {
-				if(a%100==0) {
-					break;
-				}
-				a=a-1;
-			}
-			while(true) {
-				if(a%b==0) {
-					break;
-				}
-				a=a+1;
-			}
-			if(a%100<10) {
-				System.out.println("0"+a%100);
-			}else {
-				System.out.println(a%100);
-			}
+		Person per = new Student("È«±æµ¿");
+		
+		Student stu = (Student)per;
+		stu.name = "±è°¡³ª";
+		stu.check = "È®ÀÎ¿ë";
 		}
-
-	}
 }

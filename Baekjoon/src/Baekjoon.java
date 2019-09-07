@@ -4,12 +4,16 @@ public class Baekjoon {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
-		long []array = new long[num+1];
-		array[0] = 0;
-		array[1] = 1;
-		for(int i = 2;i<array.length;i++) {
-			array[i] = array[i-1]+array[i-2];
+		char[]arrayc = new char[num*2+1];
+		int []array = new int[num*2+1];
+		
+		for(int i = 0;i<num;i+=2) {
+			array[i] = scan.nextInt();
+			arrayc[i] = scan.next().charAt(0);
+			array[i+1] = scan.nextInt();
 		}
-		System.out.println(array[num]);
+		for(int i = 0;i<num;i+=2) {
+			System.out.println(array[i]+array[i+1]);
+		}
 	}
 }
